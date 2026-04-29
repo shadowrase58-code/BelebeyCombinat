@@ -1554,7 +1554,7 @@ label {
     padding: 80px 0;
     background: linear-gradient(135deg, #e5f6ea 0%, #e5f6ea 100%);
     position: relative;
-    z-index: 20;
+    z-index: 10;
 }
 
 .contact-section::before {
