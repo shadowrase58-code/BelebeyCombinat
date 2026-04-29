@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style_katalog.css">
+    <link rel="stylesheet" href="/reset.css">
+    
+</head>
+<body>
+    <header class="header">
+    <div class="header__top-inner">
+        <div class="header__logo">
+            <img src="images/logo2.png" alt="">
+        </div>
+        <nav class="header__nav">
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle">
+                <span></span>
+            </label>
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="kombinat.html">Главная</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="kombinat.html#garant">О нас</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="katalog.html">Продукция</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="gdekupit.html">Где купить</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="kombinat.html#timeline">История компании</a>
+                </li>
+                <div class="header__actions">
+                    <a class="header__consult-btn" href="#questions">Связаться с нами</a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main class="main">
+        <div class="hero-section">
+            <img src="images/поле4.png" alt="" class="hero-image">
+            <div class="hero-content">
+                <div class="breadcrumbs">
+                    <a href="/kombinat.html" class="breadcrumbs__home">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 7.5L10 1.66667L17.5 7.5V16.6667C17.5 17.1087 17.3244 17.5326 17.0118 17.8452C16.6993 18.1577 16.2754 18.3333 15.8333 18.3333H4.16667C3.72464 18.3333 3.30072 18.1577 2.98816 17.8452C2.67559 17.5326 2.5 17.1087 2.5 16.6667V7.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.66663 18.3333V10H13.3333V18.3333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <span class="breadcrumbs__separator">></span>
+                    <span class="breadcrumbs__current">Каталог</span>
+                </div>
+                
+                <h1 class="hero-title">Каталог</h1>
+                <p class="hero-subtitle">С проверенными продуктами готовить одно удовольствие. Они не подведут, они гарантируют результат. Именно поэтому они вдохновляют на новые кулинарные свершения.</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Навигация по категориям -->
+    <div class="navigation">
+        <div class="navigation-items">
+            <div class="category-link" data-category="all">
+                <div class="navigation-item1 active" id="cat-all">
+                    <div class="item1">
+                        <div class="nav-content">
+                            <span>вся<br>продукция</span>
+                        </div>
+                        <div class="nav-image">
+                            <img src="images/chesseandmaslo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-link" data-category="oil">
+                <div class="navigation-item2" id="cat-oil">
+                    <div class="item1">
+                        <div class="nav-content">
+                            Масла
+                        </div>
+                        <div class="nav-image1">
+                            <img src="images/maslo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-link" data-category="hard-cheese">
+                <div class="navigation-item3" id="cat-hard-cheese">
+                    <div class="item1">
+                        <div class="nav-content">
+                            Твёрдый сыр
+                        </div>
+                        <div class="nav-image2">
+                            <img src="images/chesse.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-link" data-category="soft-cheese">
+                <div class="navigation-item2" id="cat-soft-cheese">
+                    <div class="item1">
+                        <div class="nav-content">
+                            Мягкий сыр
+                        </div>
+                        <div class="nav-image1">
+                            <img src="images/монбрисливочный.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Каталог товаров -->
+    <div class="catalog-content">
+        <main class="main">
+            <div class="main__catalog">
+                <div class="container">
+                    <!-- Используем CSS Grid для ровных рядов -->
+                    <div class="cards">
+                        <!-- Твердые сыры -->
+                        <div class="card" data-category="hard-cheese">
+                            <img src="images/сырррр.png" alt="описание">
+                            <h3>Сыр Российский</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="hard-cheese">
+                            <img src="images/Сыр Белебеевский.png" alt="описание">
+                            <h3>Сыр Белебеевский</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="hard-cheese">
+                            <img src="images/СырКупеческий.png" alt="описание">
+                            <h3>Сыр Купеческий</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="hard-cheese">
+                            <img src="images/Гаудасыр.png" alt="описание">
+                            <h3>Сыр Гауда</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="hard-cheese">
+                            <img src="images/сырмёд.png" alt="описание">
+                            <h3>Башкирский медовый</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="hard-cheese">
+                            <img src="images/голландский.png" alt="описание">
+                            <h3>Сыр Голландский</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <!-- Масла -->
+                        <div class="card" data-category="oil">
+                            <img src="images/маслоКрестьянское.png" alt="описание">
+                            <h3>Крестьянское масло</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="oil">
+                            <img src="images/масло.png" alt="описание">
+                            <h3>Традиционное масло</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="oil">
+                            <img src="images/масло.png" alt="описание">
+                            <h3>Масло <br> сладко-сливочное</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <!-- Мягкие сыры -->
+                        <div class="card" data-category="soft-cheese">
+                            <img src="images/монбрисливочный.png" alt="описание">
+                            <h3>Монбри сливочный</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="soft-cheese">
+                            <img src="images/монбриспажитником.png" alt="описание">
+                            <h3>Монбри с пажитником</h3>
+                            <p>190г</p>
+                        </div>
+                        
+                        <div class="card" data-category="">
+                            <span>Ждите пополнений...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="katalog.js"></script>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top-inner">
+                    <div class="footer__top-col">
+                        <a class="header__logo">
+                            <img src="images/logo2.png" alt="">
+                        </a>
+                        <a class="footer__top-text" href="">
+                            Политика конфиденциальности<br>
+                        </a>
+                        <span class="footer__top-text">© 2026 ООО «Белебеевский молочный комбинат»</span>
+                    </div>
+                    <div class="footer__top-col">
+                        <h3 class="footer__top-title">О компании</h3>
+                        <ul class="footer__top-list">
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="#katalog">Каталог</a>
+                            </li>
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="#garant">Гарантии качества</a>
+                            </li>
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="#timeline">О нас / История</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-col">
+                        <h3 class="footer__top-title">Продукция</h3>
+                        <ul class="footer__top-list">
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="/katalog.html">Сыры</a>
+                            </li>
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="/katalog.html">Масло</a>
+                            </li>
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="/katalog.html">Спреды</a>
+                            </li>
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="/gdekupit.html">Где купить?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-col">
+                        <h3 class="footer__top-title">Контакты</h3>
+                        <ul class="footer__top-list">
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="tel:83478659029">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Корпус -->
+                                        <path d="M17 2H7C5.9 2 5 2.9 5 4V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V4C19 2.9 18.1 2 17 2Z" fill="#1fa64a"/>
+                                        <!-- Экран -->
+                                        <rect x="7" y="4" width="10" height="14" rx="1" fill="white"/>
+                                        <!-- Полоска динамика -->
+                                        <rect x="10" y="5" width="4" height="0.5" rx="0.25" fill="#1e7539"/>
+                                        <!-- Кнопка "домой" (кружок) -->
+                                        <circle cx="12" cy="19" r="1.2" fill="#1e7539" stroke="white" stroke-width="0.5"/>
+                                    </svg>
+                                    8 347 865-90-29
+                                </a>
+                            </li>
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="mailto:hello@createx.com">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Нижнее облачко -->
+                                        <path d="M19 8H5C3.9 8 3 8.9 3 10V18C3 19.1 3.9 20 5 20H7V23L11 20H19C20.1 20 21 19.1 21 18V10C21 8.9 20.1 8 19 8Z" fill="#1e7539" fill-opacity="0.8"/>
+                                        <!-- Верхнее облачко -->
+                                        <path d="M17 4H7C5.9 4 5 4.9 5 6V12C5 13.1 5.9 14 7 14H15L18 17V14H19C20.1 14 21 13.1 21 12V6C21 4.9 20.1 4 19 4H17Z" fill="#1fa64a"/>
+                                        <!-- Три точки внутри -->
+                                        <circle cx="9" cy="9" r="1" fill="white"/>
+                                        <circle cx="13" cy="9" r="1" fill="white"/>
+                                        <circle cx="17" cy="9" r="1" fill="white"/>
+                                    </svg>
+                                    info@belmol.ru
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-col">
+                        <h3 class="footer__top-title">Присоединяйтесь к нам:</h3>
+                        <ul class="footer__top-list">
+                            <li class="footer__top-item">
+                                <a class="footer__item-link" href="https://vk.com/belmolkom" target="_blank">
+                                    <svg fill="#fff" width="40px" height="40px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.911 0h-9.823c-8.964 0-11.089 2.125-11.089 11.089v9.823c0 8.964 2.125 11.089 11.089 11.089h9.823c8.964 0 11.089-2.125 11.089-11.089v-9.823c0-8.964-2.146-11.089-11.089-11.089zM25.833 22.828h-2.323c-0.88 0-1.151-0.698-2.734-2.302-1.375-1.333-1.984-1.51-2.323-1.51-0.479 0-0.615 0.135-0.615 0.792v2.099c0 0.563-0.177 0.901-1.667 0.901-2.464 0-5.198-1.49-7.115-4.266-2.891-4.068-3.682-7.115-3.682-7.745 0-0.339 0.135-0.656 0.786-0.656h2.328c0.589 0 0.813 0.271 1.042 0.901 1.151 3.323 3.068 6.234 3.859 6.234 0.292 0 0.427-0.135 0.427-0.88v-3.432c-0.089-1.583-0.922-1.719-0.922-2.281 0-0.271 0.224-0.542 0.583-0.542h3.661c0.495 0 0.677 0.271 0.677 0.854v4.63c0 0.5 0.224 0.677 0.359 0.677 0.292 0 0.542-0.177 1.083-0.719 1.672-1.875 2.87-4.766 2.87-4.766 0.156-0.339 0.427-0.656 1.016-0.656h2.328c0.698 0 0.854 0.359 0.698 0.859-0.292 1.354-3.141 5.375-3.141 5.375-0.245 0.406-0.339 0.583 0 1.036 0.25 0.339 1.063 1.042 1.604 1.672 0.995 1.13 1.76 2.078 1.964 2.734 0.229 0.651-0.109 0.99-0.766 0.99z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="kombinat.js"></script>
+</body>
+</html>
